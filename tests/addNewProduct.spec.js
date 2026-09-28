@@ -7,12 +7,16 @@ require('dotenv').config();
 
 
 test('Store Admin can add product', async ({ page }) => {
-  await page.goto('/');
+  const baseUrl = process.env.BASE_URL;
+  const username = process.env.USERNAME;
+  const password = process.env.PASSWORD;
+
+  await page.goto(baseUrl);
 
 
   await loginPage.assertPageTitle(page);
 
-  await loginPage.login(page, process.env.APP_USERNAME, process.env.APP_PASSWORD);
+  await loginPage.login(page, username, password );
   await loginPage.assertLoginSuccess(page);
 
   await DashboardPage.openPIMPage(page);
