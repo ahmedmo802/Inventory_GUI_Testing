@@ -8,8 +8,8 @@ require('dotenv').config();
 
 test('Store Admin can add product', async ({ page }) => {
   const baseUrl = process.env.BASE_URL;
-  const username = process.env.USERNAME;
-  const password = process.env.PASSWORD;
+  const username = process.env.APP_USERNAME;
+  const password = process.env.APP_PASSWORD;
 
   await page.goto(baseUrl);
 
