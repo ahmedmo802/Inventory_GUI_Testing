@@ -3,7 +3,6 @@ const loginPage = require('../pages/LoginPage.js');
 const DashboardPage = require('../pages/DashboardPage.js');
 const PIMPage = require('../pages/PIMPage.js');
 import testData from '../fixtures/testData.json';
-require('dotenv').config();
 
 
 test('Store Admin can add product', async ({ page }) => {
