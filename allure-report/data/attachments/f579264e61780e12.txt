@@ -1,0 +1,2 @@
+Employee 12345 found.
+Employee with ID 12345 has been deleted.
